@@ -1,0 +1,122 @@
+.current-weather {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.weather-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.city-name {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+}
+
+.country {
+  font-size: 1rem;
+  color: rgba(148, 163, 184, 0.9);
+  font-weight: 400;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2.5rem 0;
+}
+
+.weather-icon {
+  font-size: 6rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+}
+
+.temperature {
+  font-size: 5.5rem;
+  font-weight: 300;
+  color: white;
+  letter-spacing: -0.03em;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.detail-label {
+  font-size: 0.8125rem;
+  color: rgba(148, 163, 184, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 640px) {
+  .current-weather {
+    padding: 2rem;
+  }
+
+  .city-name {
+    font-size: 1.75rem;
+  }
+
+  .weather-main {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .weather-icon {
+    font-size: 4.5rem;
+  }
+
+  .temperature {
+    font-size: 4rem;
+  }
+
+  .weather-details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .current-weather {
+    padding: 1.5rem;
+  }
+
+  .city-name {
+    font-size: 1.5rem;
+  }
+
+  .temperature {
+    font-size: 3.5rem;
+  }
+}

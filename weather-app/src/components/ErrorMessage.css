@@ -1,0 +1,25 @@
+.error-container {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(239, 68, 68, 0.15);
+}
+
+.error-icon {
+  font-size: 3.5rem;
+  filter: drop-shadow(0 4px 12px rgba(239, 68, 68, 0.3));
+}
+
+.error-message {
+  font-size: 1.125rem;
+  color: rgba(241, 245, 249, 0.95);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}

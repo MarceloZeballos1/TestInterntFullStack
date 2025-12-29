@@ -1,0 +1,135 @@
+.forecast-list {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.forecast-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: white;
+  letter-spacing: -0.01em;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.forecast-card {
+  background: rgba(15, 23, 42, 0.4);
+  border-radius: 1.25rem;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  transition: all 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: translateY(-4px);
+  background: rgba(15, 23, 42, 0.6);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.forecast-date {
+  font-size: 0.875rem;
+  color: rgba(148, 163, 184, 0.9);
+  font-weight: 500;
+  margin-bottom: 1.125rem;
+  text-transform: capitalize;
+}
+
+.forecast-icon {
+  font-size: 2.75rem;
+  margin-bottom: 0.875rem;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.forecast-description {
+  font-size: 0.8125rem;
+  color: rgba(148, 163, 184, 0.8);
+  margin-bottom: 1.125rem;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.forecast-temps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.temp-max {
+  color: white;
+}
+
+.temp-separator {
+  color: rgba(148, 163, 184, 0.4);
+  font-weight: 300;
+}
+
+.temp-min {
+  color: rgba(148, 163, 184, 0.8);
+}
+
+@media (max-width: 768px) {
+  .forecast-list {
+    padding: 2rem;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .forecast-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .forecast-icon {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast-list {
+    padding: 1.5rem;
+  }
+
+  .forecast-title {
+    font-size: 1.25rem;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .forecast-card {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .forecast-date {
+    font-size: 0.8125rem;
+  }
+
+  .forecast-icon {
+    font-size: 2rem;
+  }
+
+  .forecast-description {
+    font-size: 0.75rem;
+    min-height: 2rem;
+  }
+}
